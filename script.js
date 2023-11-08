@@ -31,3 +31,9 @@ const updateScore = (winner) => {
         computerScore++;
     }
 };
+
+// Advance Round function to increase the round number
+
+const advanceRound = () => {
+    currentRoundNumber++;
+};
