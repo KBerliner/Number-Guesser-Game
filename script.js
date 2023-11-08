@@ -13,6 +13,10 @@ const generateTarget = () => {
 // Compare the Computer and the User guess to the Secret Target Number Function
 
 const compareGuesses = (user, computer, target) => {
+    if (user > 9 || user < 0) {
+        alert('Error: The user\'s guess cannot be outside of the given range of 0-9. This results in an automatic computer win point.');
+        return false;
+    }
     if (Math.abs(user - target) === Math.abs(computer - target)) {
         return true;
     } else if (Math.abs(user - target) < Math.abs(computer - target)) {
