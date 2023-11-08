@@ -21,3 +21,13 @@ const compareGuesses = (user, computer, target) => {
         return false;
     }
 };
+
+// Increase the score of the winner
+
+const updateScore = (winner) => {
+    if (winner == 'human') {
+        humanScore++;
+    } else if (winner == 'computer') {
+        computerScore++;
+    }
+};
